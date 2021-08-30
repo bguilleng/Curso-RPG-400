@@ -1,0 +1,33 @@
+000100201213     A*         F LSFRCHOMF
+000101201213     A*
+000102201213     A                                      UNIQUE
+000103201213     A          R LSFRCHD
+000104201213     A            FRCCODL        6  0       TEXT('C.FRECH LEASING')
+000105201213     A                                      COLHDG('C.FRECH LEASING')
+000106201213     A            FRCCODF        6  0       TEXT('C.FRECH')
+000107201213     A                                      COLHDG('C.FRECH')
+000108201213     A            FRCDESC       50          TEXT('DESCRIPCION')
+000109201213     A                                      COLHDG('DESCRIPCION')
+000110201213     A            FRCEDO         1  0       TEXT('ESTADO')
+000111201213     A                                      COLHDG('ESTADO')
+000112201213     A* 1=INACTIVO
+000113201213     A* 0=ACTIVO
+000114201213     A            FRCFCRE        8  0       TEXT('FECHA CREACION')
+000115201213     A                                      COLHDG('FECHA CREACION')
+000116201213     A            FRCHCRE        6  0       TEXT('HORA CREACION')
+000117201213     A                                      COLHDG('HORA CREACION')
+000118201213     A            FRCUCRE       10          TEXT('USER CREACION')
+000119201213     A                                      COLHDG('USER CREACION')
+000120201213     A            FRCUINA       10          TEXT('USER INACTIV.')
+000121201213     A                                      COLHDG('USER INACTIV.')
+000122201213     A            FRCFINA        8  0       TEXT('FEC. INACTIV.')
+000123201213     A                                      COLHDG('FEC. INACTIV.')
+000124201213     A            FRCMUSE       10          TEXT('USER MODIFIC.')
+000125201213     A                                      COLHDG('USER MODIFIC.')
+000126201213     A            FRCMDOF        8  0       TEXT('FEC. MODIFIC.')
+000127201213     A                                      COLHDG('FEC. MODIFIC.')
+000128201215     A            FRCMFEC        8  0       TEXT('FEC. EYXIFIC.')
+000129201215     A                                      COLHDG('FEC. MODIFIC.')
+000130201213     A*
+000131201213     A          K FRCCODL
+000132201213

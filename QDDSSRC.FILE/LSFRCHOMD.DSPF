@@ -1,0 +1,110 @@
+000100201212     A*%%TS  SD  20201119  152209  BDGUILLENG  REL-V7R3M0  5770-WDS
+000101201212     A*=========================================================================
+000102201212     A* (C) COPYRIGHT 2019 Colpatria
+000103201212     A*=====================================================================
+000104201212     A* M O D I F I C A C I O N E S
+000105201212     A*=====================================================================
+000106201212     A*%%EC
+000107201212     A                                      DSPSIZ(27 132 *DS4)
+000108201212     A                                      INDARA
+000109201212     A                                      ERRSFL
+000110201212     A                                      CF03(03 'Salir')
+000111201212     A                                      CF06(06 'Crear')
+000112201212     A                                      CF04(04 'Activar')
+000113201212     A                                      CF05(05 'Inactivar')
+000114201212     A          R DSP001
+000115201212     A*%%TS  SD  20201119  082921  BDGUILLENG  REL-V7R3M0  5770-WDS
+000116201212     A                                      OVERLAY
+000117201212     A                                 23  3'F3=Salir'
+000118201212     A                                      COLOR(BLU)
+000119201212     A                                 23121'AvPag/RePag'
+000120201212     A                                      COLOR(BLU)
+000121201212     A                                 23 39'F6=Crear'
+000122201212     A                                      COLOR(BLU)
+000123201212     A            ERRORSBF     120A  O 21  4COLOR(WHT)
+000124201212     A                                 22  3'                                  -
+000125201212     A                                                                         -
+000126201212     A                                                                         -
+000127201212     A                                                               '
+000128201212     A                                      DSPATR(UL)
+000129201212     A          R SFL001                    SFL
+000130201212     A*%%TS  SD  20201119  152209  BDGUILLENG  REL-V7R3M0  5770-WDS
+000131201212     A            OPC            1A  B 11  3COLOR(TRQ)
+000132201212     A                                      VALUES('2' '5' '4' ' ' '3')
+000133201212     A            WESTADO       10A  O 11120
+000134201212     A  80                                  COLOR(TRQ)
+000135201212     A  81                                  COLOR(RED)
+000136201212     A            FRCCODL   R        O 11 10REFFLD(LSFRCHD/FRCCODL *LIBL/LSFRCH-
+000137201212     A                                      OMF)
+000138201212     A                                      COLOR(WHT)
+000139201212     A            FRCCODF   R        O 11 22REFFLD(LSFRCHD/FRCCODF *LIBL/LSFRCH-
+000140201212     A                                      OMF)
+000141201212     A            FRCDESC   R        O 11 35REFFLD(LSFRCHD/FRCDESC *LIBL/LSFRCH-
+000142201212     A                                      OMF)
+000143201212     A            FRCFCRE   R        O 11 91REFFLD(LSFRCHD/FRCFCRE *LIBL/LSFRCH-
+000144201212     A                                      OMF)
+000145201212     A                                      EDTCDE(Y)
+000146201212     A            FRCUCRE   R        O 11106REFFLD(LSFRCHD/FRCUCRE *LIBL/LSFRCH-
+000147201212     A                                      OMF)
+000148201212     A            FRCEDO    R        O 11 88REFFLD(LSFRCHD/FRCEDO *LIBL/LSFRCHO-
+000149201212     A                                      MF)
+000150201212     A                                      DSPATR(ND)
+000151201212     A          R CTL001                    SFLCTL(SFL001)
+000152201212     A*%%TS  SD  20201119  150720  BDGUILLENG  REL-V7R3M0  5770-WDS
+000153201212     A                                      SFLSIZ(0009)
+000154201212     A                                      SFLPAG(0009)
+000155201212     A                                      PAGEDOWN(35 'Avanzar P gina')
+000156201212     A                                      PAGEUP(36 'Retroceso P gina')
+000157201212     A                                      OVERLAY
+000158201212     A  55                                  SFLDSP
+000159201212     A N56                                  SFLDSPCTL
+000160201212     A  56                                  SFLCLR
+000161201212     A            POSCUR         4S 0H
+000162201212     A            RRN01          5S 0H
+000163201212     A                                  1  2USER
+000164201212     A                                  2124TIME
+000165201212     A                                      EDTWRD('  :  :  ')
+000166201212     A                                      COLOR(WHT)
+000167201212     A            PGM           10A  O  2  2DSPATR(HI)
+000168201212     A                                      COLOR(WHT)
+000169201212     A                                  1124DATE
+000170201212     A                                      EDTCDE(Y)
+000171201212     A                                      DSPATR(HI)
+000172201212     A                                      COLOR(WHT)
+000173201212     A                                  7  2'Seleccione opci¢n y presione Enter'
+000174201212     A                                      COLOR(BLU)
+000175201212     A                                 10  2'Opc.   Leasing      Frech         -
+000176201212     A                                                   Descripci•n           -
+000177201212     A                                                            Fecha        -
+000178201212     A                                       Usuario        Estado  '
+000179201212     A                                      DSPATR(UL)
+000180201212     A                                      COLOR(WHT)
+000181201212     A            TPROCESO      50A  O  2 42COLOR(WHT)
+000182201212     A            TMODULO       50A  O  3 42COLOR(WHT)
+000183201212     A            TBANCO        50A  O  1 42COLOR(RED)
+000184201212     A                                  6  2'Situar en..........:'
+000185201212     A                                      COLOR(WHT)
+000186201212     A                                  7 39'2=Modificar  3=Consular  4=Inactiv-
+000187201212     A                                      ar  5=Activar'
+000188201212     A                                      COLOR(BLU)
+000189201212     A            CODCRE         6Y 0B  6 23EDTCDE(Z)
+000190201212     A                                      COLOR(BLU)
+000191201212     A                                  4  2'                                  -
+000192201212     A                                                                         -
+000193201212     A                                                                         -
+000194201212     A                                                                '
+000195201212     A                                      DSPATR(UL)
+000196201212     A                                  9  9'   C•digo Frech    '
+000197201212     A                                      DSPATR(UL)
+000198201212     A                                      COLOR(WHT)
+000199201212     A                                  9 91'       Creaci•n          '
+000200201212     A                                      DSPATR(UL)
+000201201212     A                                      COLOR(WHT)
+000202201212     A                                  6 40'Filtrar por estado:'
+000203201212     A                                      COLOR(BLU)
+000204201212     A            SELEC          2Y 0B  6 62SNGCHCFLD((*NUMCOL 3))
+000205201212     A                                      COLOR(YLW)
+000206201212     A                                      CHOICE(1 'TODOS')
+000207201212     A                                      CHOICE(2 'ACTIVO')
+000208201212     A                                      CHOICE(3 'INACTIVO')
+000209201212

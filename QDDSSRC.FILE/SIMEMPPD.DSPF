@@ -1,0 +1,111 @@
+000010201214     A*%%TS  SD  20201214  015129  GGUILLENB   REL-V7R4M0  5770-WDS
+000020201214     A*%%EC
+000030201214     A                                      DSPSIZ(24 80 *DS3)
+000040201214     A                                      INDARA
+000050201214     A          R PANTA01
+000060201214     A*%%TS  SD  20201214  014509  GGUILLENB   REL-V7R4M0  5770-WDS
+000070201214     A                                      CF03(03 'SALIR')
+000080201214     A                                      CF12(12 'CANCEL')
+000090201214     A                                      CF02(02 'Nuevo')
+000100201214     A                                      CF05(05 'Eliminar')
+000110201214     A                                      CF08(08 'Modificar')
+000120201214     A                                  1  3'PANTALLA'
+000130201214     A                                      COLOR(WHT)
+000140201214     A                                  3 29'MANTENIMIENTO EMPLEADOS'
+000150201214     A                                      COLOR(WHT)
+000160201214     A                                  4  3'                                  -
+000170201214     A                                                                         -
+000180201214     A                                              '
+000190201214     A                                      DSPATR(UL)
+000200201214     A                                  3 69USER
+000210201214     A                                  2 69TIME
+000220201214     A                                  1 69DATE
+000230201214     A                                      EDTCDE(Y)
+000240201214     A                                  2  3'PGM001'
+000250201214     A                                      COLOR(WHT)
+000260201214     A                                  2 29'SISTEMA RECURSOS HUMANOS'
+000270201214     A                                      COLOR(WHT)
+000280201214     A                                  6 12'NRO.EMPLEADO'
+000290201214     A                                      COLOR(WHT)
+000300201214     A            EMPADD    R        B  6 28REFFLD(RSIMEMPP/EMPADD GGUILLENB1/S-
+000310201214     A                                      IMEMPPF)
+000320201214     A                                      EDTCDE(Z)
+000330201214     A                                  8 12'NOMBRE'
+000340201214     A                                      COLOR(TRQ)
+000350201214     A                                 10 12'ID.EMPLEADO'
+000360201214     A                                      COLOR(TRQ)
+000370201214     A                                 12 12'TIPO SANGRE'
+000380201214     A                                      COLOR(TRQ)
+000390201214     A                                 20  2'                                  -
+000400201214     A                                                                         -
+000410201214     A                                               '
+000420201214     A                                      DSPATR(UL)
+000430201214     A                                 21 25'F3=Salir'
+000440201214     A                                      COLOR(BLU)
+000450201214     A                                 21 36'F5=Eliminar'
+000460201214     A                                      COLOR(BLU)
+000470201214     A            MENSAJE       70A  O 18  3COLOR(RED)
+000480201214     A                                      DSPATR(BL)
+000490201214     A                                 21 15'F2=Nuevo'
+000500201214     A                                      COLOR(BLU)
+000510201214     A                                 21 67'F12=Cancelar'
+000520201214     A                                      COLOR(BLU)
+000530201214     A            EMPNAME   R        O  8 28REFFLD(RSIMEMPP/EMPNAME GGUILLENB1/-
+000540201214     A                                      SIMEMPPF)
+000550201214     A            EMPNUM    R        O 10 28REFFLD(RSIMEMPP/EMPNUM GGUILLENB1/S-
+000560201214     A                                      IMEMPPF)
+000570201214     A            EMPPH     R        O 12 28REFFLD(RSIMEMPP/EMPPH GGUILLENB1/SI-
+000580201214     A                                      MEMPPF)
+000590201214     A                                 21 51'F8=Modificar'
+000600201214     A                                      COLOR(BLU)
+000610201214     A          R PANTA02
+000620201214     A*%%TS  SD  20201214  014509  GGUILLENB   REL-V7R4M0  5770-WDS
+000630201214     A                                      CF01(01 'GRABAR')
+000640201214     A                                      CF03(03 'SALIR')
+000650201214     A                                      CF12(12 'CANCEL')
+000660201214     A                                  1  3'PANTALLA'
+000670201214     A                                      COLOR(WHT)
+000680201214     A                                  3 29'MANTENIMIENTO EMPLEADOS'
+000690201214     A                                      COLOR(WHT)
+000700201214     A                                  4  3'                                  -
+000710201214     A                                                                         -
+000720201214     A                                              '
+000730201214     A                                      DSPATR(UL)
+000740201214     A                                  3 69USER
+000750201214     A                                  2 69TIME
+000760201214     A                                  1 69DATE
+000770201214     A                                      EDTCDE(Y)
+000780201214     A                                  2  3'PGM001'
+000790201214     A                                      COLOR(WHT)
+000800201214     A                                  2 29'SISTEMA RECURSOS HUMANOS'
+000810201214     A                                      COLOR(WHT)
+000820201214     A                                  6 12'NRO.EMPLEADO'
+000830201214     A                                      COLOR(WHT)
+000840201214     A            EMPADD    R        B  6 28REFFLD(RSIMEMPP/EMPADD GGUILLENB1/S-
+000850201214     A                                      IMEMPPF)
+000860201214     A                                      EDTCDE(Z)
+000870201214     A                                  8 12'NOMBRE'
+000880201214     A                                      COLOR(TRQ)
+000890201214     A            EMPNAME   R        B  8 28REFFLD(RSIMEMPP/EMPNAME GGUILLENB1/-
+000900201214     A                                      SIMEMPPF)
+000910201214     A                                 10 12'ID.EMPLEADO'
+000920201214     A                                      COLOR(TRQ)
+000930201214     A            EMPNUM    R        B 10 28REFFLD(RSIMEMPP/EMPNUM GGUILLENB1/S-
+000940201214     A                                      IMEMPPF)
+000950201214     A                                      EDTCDE(Z)
+000960201214     A                                 12 12'TIPO SANGRE'
+000970201214     A                                      COLOR(TRQ)
+000980201214     A            EMPPH     R        B 12 28REFFLD(RSIMEMPP/EMPPH GGUILLENB1/SI-
+000990201214     A                                      MEMPPF)
+001000201214     A                                 20  2'                                  -
+001010201214     A                                                                         -
+001020201214     A                                               '
+001030201214     A                                      DSPATR(UL)
+001040201214     A                                 21  3'F1=Grabar'
+001050201214     A                                      COLOR(BLU)
+001060201214     A                                 21 25'F3=Salir'
+001070201214     A                                      COLOR(BLU)
+001080201214     A            MENSAJE       70A  O 18  3COLOR(RED)
+001090201214     A                                      DSPATR(BL)
+001100201214     A                                 21 67'F12=Cancelar'
+001110201214     A                                      COLOR(BLU)

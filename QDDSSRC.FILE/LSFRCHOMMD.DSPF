@@ -1,0 +1,123 @@
+000100201212     A*%%TS  SD  20201119  154649  BDGUILLENG  REL-V7R3M0  5770-WDS
+000101201212     A*=========================================================================
+000102201212     A* (C) COPYRIGHT 2019 Colpatria
+000103201212     A*=====================================================================
+000104201212     A* M O D I F I C A C I O N E S
+000105201212     A*=====================================================================
+000106201212     A*%%EC
+000107201212     A                                      DSPSIZ(27 132 *DS4)
+000108201212     A                                      INDARA
+000109201212     A                                      ERRSFL
+000110201212     A                                      CF03(03 'Salir')
+000111201212     A                                      CF06(06 'Crear')
+000112201212     A                                      CF04(04 'Activar')
+000113201212     A                                      CF05(05 'Inactivar')
+000114201212     A          R DUMMY
+000115201212     A*%%TS  SD  20200702  151056  BDGUILLENG  REL-V7R3M0  5770-WDS
+000116201212     A                                      KEEP
+000117201212     A                                      ASSUME
+000118201212     A                                      OVERLAY
+000119201212     A                                  3131' '
+000120201212     A          R WIN001
+000121201212     A*%%TS  SD  20201119  154649  BDGUILLENG  REL-V7R3M0  5770-WDS
+000122201212     A                                      WINDOW(6 8 9 70)
+000123201212     A                                      TEXT('MANTENIMIENTO H.DECRE')
+000124201212     A N62                                  CF02(02 'Confirmar')
+000125201212     A                                      CF12(12 'Cancelar')
+000126201212     A                                      RTNCSRLOC(&NOMREG &NOMCAM)
+000127201212     A                                      WDWTITLE((*TEXT &TITLE))
+000128201212     A                                      WDWTITLE((*TEXT ' F2=Aceptar  F12=C-
+000129201212     A                                      ancelar') *LEFT *BOTTOM)
+000130201212     A            NOMREG        10A  H
+000131201212     A            NOMCAM        10A  H
+000132201212     A            TITLE         41A  P
+000133201212     A            MSG001        70A  O  8  1COLOR(WHT)
+000134201212     A                                  4  1'Decreto Leasing...:'
+000135201212     A                                      COLOR(BLU)
+000136201212     A                                  5  1'Decreto Frech.....:'
+000137201212     A                                      COLOR(BLU)
+000138201212     A                                  6  1'Descripci•n.......:'
+000139201212     A                                      COLOR(BLU)
+000140201212     A            WFRCCODL  R        B  4 21REFFLD(LSFRCHD/FRCCODL *LIBL/LSFRCH-
+000141201212     A                                      OMF)
+000142201212     A                                      EDTCDE(Z)
+000143201212     A  11                                  DSPATR(PR)
+000144201212     A            WFRCCODF  R        B  5 21REFFLD(LSFRCHD/FRCCODF *LIBL/LSFRCH-
+000145201212     A                                      OMF)
+000146201212     A                                      EDTCDE(Z)
+000147201212     A  11                                  DSPATR(PR)
+000148201212     A            WFRCDESC  R        B  6 21REFFLD(LSFRCHD/FRCDESC *LIBL/LSFRCH-
+000149201212     A                                      OMF)
+000150201212     A  11                                  DSPATR(PR)
+000151201212     A            TFUNCION      50A  O  2 11COLOR(WHT)
+000152201212     A          R WIN002
+000153201212     A*%%TS  SD  20201119  154649  BDGUILLENG  REL-V7R3M0  5770-WDS
+000154201212     A                                      WINDOW(6 8 13 70)
+000155201212     A                                      TEXT('CONSULTA HOMO.DECRETO')
+000156201212     A                                      CF12(12 'Cancelar')
+000157201212     A                                      RTNCSRLOC(&NOMREG &NOMCAM)
+000158201212     A                                      RMVWDW
+000159201212     A                                      USRRSTDSP
+000160201212     A                                      WDWTITLE((*TEXT &TITLE2))
+000161201212     A                                      WDWTITLE((*TEXT ' F12=Cancelar') *L-
+000162201212     A                                      EFT *BOTTOM)
+000163201212     A            NOMREG        10A  H
+000164201212     A            NOMCAM        10A  H
+000165201212     A            TITLE2        41A  P
+000166201212     A                                  3  1'Decreto Leasing...:'
+000167201212     A                                      COLOR(BLU)
+000168201212     A                                  4  1'Decreto Frech.....:'
+000169201212     A                                      COLOR(BLU)
+000170201212     A                                  5  1'Descripci•n.......:'
+000171201212     A                                      COLOR(BLU)
+000172201212     A            FRCCODL   R        O  3 21REFFLD(LSFRCHD/FRCCODL *LIBL/LSFRCH-
+000173201212     A                                      OMF)
+000174201212     A                                      COLOR(WHT)
+000175201212     A            FRCCODF   R        O  4 21REFFLD(LSFRCHD/FRCCODF *LIBL/LSFRCH-
+000176201212     A                                      OMF)
+000177201212     A            FRCDESC   R        O  5 21REFFLD(LSFRCHD/FRCDESC *LIBL/LSFRCH-
+000178201212     A                                      OMF)
+000179201212     A                                  9  1'    CREACION       '
+000180201212     A                                      COLOR(WHT)
+000181201212     A                                      DSPATR(UL)
+000182201212     A                                 10  1'Fecha..:'
+000183201212     A                                      COLOR(TRQ)
+000184201212     A                                 11  1'Hora...:'
+000185201212     A                                      COLOR(TRQ)
+000186201212     A                                 12  1'Usuario:'
+000187201212     A                                      COLOR(TRQ)
+000188201212     A            FRCFCRE   R        O 10 10REFFLD(LSFRCHD/FRCFCRE *LIBL/LSFRCH-
+000189201212     A                                      OMF)
+000190201212     A                                      EDTCDE(Y)
+000191201212     A            FRCHCRE   R        O 11 10REFFLD(LSFRCHD/FRCHCRE *LIBL/LSFRCH-
+000192201212     A                                      OMF)
+000193201212     A            FRCUCRE   R        O 12 10REFFLD(LSFRCHD/FRCUCRE *LIBL/LSFRCH-
+000194201212     A                                      OMF)
+000195201212     A                                  9 27'   MODIFCACION     '
+000196201212     A                                      DSPATR(UL)
+000197201212     A                                      COLOR(WHT)
+000198201212     A                                 10 27'Fecha..:'
+000199201212     A                                      COLOR(TRQ)
+000200201212     A                                 11 27'Usuario:'
+000201201212     A                                      COLOR(TRQ)
+000202201212     A            FRCMDOF   R        O 10 36REFFLD(LSFRCHD/FRCMDOF *LIBL/LSFRCH-
+000203201212     A                                      OMF)
+000204201212     A                                      EDTCDE(Y)
+000205201212     A            FRCMUSE   R        O 11 36REFFLD(LSFRCHD/FRCMUSE *LIBL/LSFRCH-
+000206201212     A                                      OMF)
+000207201212     A                                  9 51'  INACTIVACION     '
+000208201212     A                                      DSPATR(UL)
+000209201212     A                                      COLOR(WHT)
+000210201212     A                                 10 51'Fecha..:'
+000211201212     A                                      COLOR(TRQ)
+000212201212     A                                 11 51'Usuario:'
+000213201212     A                                      COLOR(TRQ)
+000214201212     A            FRCFINA   R        O 10 60REFFLD(LSFRCHD/FRCFINA *LIBL/LSFRCH-
+000215201212     A                                      OMF)
+000216201212     A                                      EDTCDE(Y)
+000217201212     A            FRCUINA   R        O 11 60REFFLD(LSFRCHD/FRCUINA *LIBL/LSFRCH-
+000218201212     A                                      OMF)
+000219201212     A                                  6  1'Estado............:'
+000220201212     A                                      COLOR(BLU)
+000221201212     A            WESTD         20A  O  6 21
+000222201212

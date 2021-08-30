@@ -1,0 +1,19 @@
+000100201217     A*         F CUSTCDT
+000200201212     A*
+000300201212     A                                      UNIQUE
+000400201217     A          R RCUSTCDT
+000500201217     A            CUSNUM         6  0       TEXT('NRO.CLIENTE')
+000600201217     A                                      COLHDG('NRO.CLIENTE')
+000700201217     A            LSTNAME       50          TEXT('NOMBRE')
+000800201212     A                                      COLHDG('NOMBRE')
+000900201217     A            INIT          10          TEXT('INICIALES')
+001000201217     A                                      COLHDG('INICIALES')
+001100201217     A            CITY          20          TEXT('CIUDAD')
+001200201217     A                                      COLHDG('CIUDAD')
+001201201217     A            STATE          1  0       TEXT('ESTADO')
+001202201217     A                                      COLHDG('ESTADO')
+001203201217     A            BALDUE        15  2       TEXT('BAL.VENCIDO')
+001204201217     A                                      COLHDG('BAL.''VENCIDO')
+001300201212     A*
+001400201217     A          K CUSNUM
+001500201212

@@ -1,0 +1,15 @@
+000100201212     A*         F SIMEMPPF
+000200201212     A*
+000300201212     A                                      UNIQUE
+000400201212     A          R RSIMEMPP
+000500201212     A            EMPADD         6  0       TEXT('NRO.EMPLEADO')
+000600201212     A                                      COLHDG('NRO.EMPLEADO')
+000700201212     A            EMPNAME       50          TEXT('NOMBRE')
+000800201212     A                                      COLHDG('NOMBRE')
+000900201212     A            EMPNUM         9  0       TEXT('ID.EMPLEADO')
+001000201212     A                                      COLHDG('ID.EMPLEADO')
+001100201212     A            EMPPH          1          TEXT('TIPO SANGRE')
+001200201212     A                                      COLHDG('TIPO SANGRE')
+001300201212     A*
+001400201212     A          K EMPADD
+001500201212

@@ -1,0 +1,73 @@
+000010201214     A*%%TS  SD  20201214  132312  GGUILLENB   REL-V7R4M0  5770-WDS
+000020201212     A*=========================================================================
+000030201214     A* (C) COPYRIGHT 2019 XXXXXXXXXX
+000040201212     A*=====================================================================
+000050201212     A* M O D I F I C A C I O N E S
+000060201212     A*=====================================================================
+000070201214     A*%%EC
+000080201214     A                                      DSPSIZ(27 132 *DS4)
+000090201214     A                                      INDARA
+000100201214     A                                      ERRSFL
+000110201214     A                                      CF03(03 'Salir')
+000120201214     A          R DSP001
+000130201214     A*%%TS  SD  20201214  132312  GGUILLENB   REL-V7R4M0  5770-WDS
+000140201214     A                                      OVERLAY
+000150201214     A                                 23  3'F3=Salir'
+000160201214     A                                      COLOR(BLU)
+000170201214     A                                 23121'AvPag/RePag'
+000180201214     A                                      COLOR(BLU)
+000190201214     A            ERRORSBF     120A  O 21  4COLOR(WHT)
+000200201214     A                                 22  3'                                  -
+000210201214     A                                                                         -
+000220201214     A                                                                         -
+000230201214     A                                                               '
+000240201214     A                                      DSPATR(UL)
+000250201214     A          R SFL001                    SFL
+000260201214     A*%%TS  SD  20201214  132312  GGUILLENB   REL-V7R4M0  5770-WDS
+000270201214     A            EMPADD    R        O  9 14REFFLD(RSIMEMPP/EMPADD GGUILLENB1/S-
+000280201214     A                                      IMEMPPF)
+000290201214     A            EMPNUM    R        O  9 32REFFLD(RSIMEMPP/EMPNUM GGUILLENB1/S-
+000300201214     A                                      IMEMPPF)
+000310201214     A            EMPNAME   R        O  9 51REFFLD(RSIMEMPP/EMPNAME GGUILLENB1/-
+000320201214     A                                      SIMEMPPF)
+000330201214     A            EMPPH     R        O  9114REFFLD(RSIMEMPP/EMPPH GGUILLENB1/SI-
+000340201214     A                                      MEMPPF)
+000350201214     A          R CTL001                    SFLCTL(SFL001)
+000360201214     A*%%TS  SD  20201214  132312  GGUILLENB   REL-V7R4M0  5770-WDS
+000370201214     A                                      PAGEDOWN(35 'Avanzar P gina')
+000380201214     A                                      PAGEUP(36 'Retroceso P gina')
+000390201214     A                                      OVERLAY
+000400201214     A  55                                  SFLDSP
+000410201214     A N56                                  SFLDSPCTL
+000420201214     A  56                                  SFLCLR
+000430201214     A                                      SFLSIZ(9999)
+000440201214     A                                      SFLPAG(0011)
+000450201214     A            POSCUR         4S 0H
+000460201214     A            RRN01          5S 0H
+000470201214     A                                  1  2USER
+000480201214     A                                  2124TIME
+000490201214     A                                      EDTWRD('  :  :  ')
+000500201214     A                                      COLOR(WHT)
+000510201214     A            PGM           10A  O  2  2DSPATR(HI)
+000520201214     A                                      COLOR(WHT)
+000530201214     A                                  1124DATE
+000540201214     A                                      EDTCDE(Y)
+000550201214     A                                      DSPATR(HI)
+000560201214     A                                      COLOR(WHT)
+000570201214     A                                  8 10'  Código Empleado   Identificación-
+000580201214     A                                                        Nombre del Emplea-
+000590201214     A                                      do                           Tipo S-
+000600201214     A                                      angre   '
+000610201214     A                                      DSPATR(UL)
+000620201214     A                                      COLOR(WHT)
+000630201214     A            TPROCESO      50A  O  2 42COLOR(WHT)
+000640201214     A            TMODULO       50A  O  3 42COLOR(WHT)
+000650201214     A            TBANCO        50A  O  1 42COLOR(RED)
+000660201214     A                                  4  2'                                  -
+000670201214     A                                                                         -
+000680201214     A                                                                         -
+000690201214     A                                                                '
+000700201214     A                                      DSPATR(UL)
+000710201214     A                                  6  4'Modelo Subfile Sencillo con Pagine-
+000720201214     A                                      o Controlado por RPG'
+000730201214     A                                      COLOR(BLU)
